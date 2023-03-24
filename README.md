@@ -24,7 +24,8 @@ DemoCrud is a demo project that comunicates with H2 memory database.
 
 ### Getting Started
 
-requisits: JDK 17
+**requisits: JDK 17**
 
-Compile: mvn clean install
-run: mvn spring-boot:run
+**Compile**: mvn clean install
+
+**run**: mvn spring-boot:run
