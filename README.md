@@ -4,6 +4,8 @@ DemoCrud is a demo REST API project that comunicates with H2 memory database.
 
 **Project**: https://github.com/reisllucas/demoCrud/tree/main/demoCrudBackend
 
+**JUnit Tests**: https://github.com/reisllucas/demoCrud/tree/main/demoCrudBackend/src/test/java/br/com/demo/crud/crudbackend
+
 **JavaDoc**: https://github.com/reisllucas/demoCrud/tree/main/demoCrudBackend/javadoc
 
 **Postman**: https://github.com/reisllucas/demoCrud/blob/main/demoCrudBackend/DemoCrud.postman_collection.json
