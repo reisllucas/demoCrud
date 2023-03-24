@@ -1,6 +1,6 @@
 # demoCrud
 
-DemoCrud is a demo project that comunicates with H2 memory database.
+DemoCrud is a demo REST API project that comunicates with H2 memory database.
 
 **JavaDoc**: https://github.com/reisllucas/demoCrud/tree/main/demoCrudBackend/javadoc
 
@@ -9,7 +9,7 @@ DemoCrud is a demo project that comunicates with H2 memory database.
 
 **H2 Login**: http://localhost:8080/h2-ui
 
-  **credentials**: 
+  **Credentials**: 
   
     url: jdbc:h2:mem:db
     
@@ -24,8 +24,8 @@ DemoCrud is a demo project that comunicates with H2 memory database.
 
 ### Getting Started
 
-**requisits: JDK 17**
+**Requisits: JDK 17**
 
 **Compile**: mvn clean install
 
-**run**: mvn spring-boot:run
+**Run**: mvn spring-boot:run
