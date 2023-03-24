@@ -1,4 +1,4 @@
-# demoCrud
+# DemoCrud
 
 DemoCrud is a demo REST API project that comunicates with H2 memory database.
 
