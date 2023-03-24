@@ -20,8 +20,7 @@ DemoCrud is a demo REST API project that comunicates with H2 memory database.
     password:
     
 
-
-
+---
 ### Getting Started
 
 **Requisits: JDK 17**
