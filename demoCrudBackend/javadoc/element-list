@@ -1,0 +1,11 @@
+br.com.demo.crud.crudbackend
+br.com.demo.crud.crudbackend.controller
+br.com.demo.crud.crudbackend.domain.dto
+br.com.demo.crud.crudbackend.domain.dto.person
+br.com.demo.crud.crudbackend.domain.enums
+br.com.demo.crud.crudbackend.domain.exceptions
+br.com.demo.crud.crudbackend.domain.model
+br.com.demo.crud.crudbackend.mapper
+br.com.demo.crud.crudbackend.repository.person
+br.com.demo.crud.crudbackend.service
+br.com.demo.crud.crudbackend.utils
