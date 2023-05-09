@@ -51,6 +51,33 @@ class PersonServiceTest {
     }
 
     @Test
+    void testFindById() {
+
+        when(personRepository.findById(getPerson3().getId()))
+                .thenReturn(Optional.of(getPerson3()));
+
+        when(personMapper.converToDto(getPerson3()))
+                .thenReturn(getPersonDTO3());
+
+        assertThat(personService.findById(getPerson3().getId()).getId())
+                .isEqualTo(Optional.of(getPerson3()).get().getId());
+
+    }
+
+    @Test
+    void testFindByIdException() {
+
+        when(personRepository.findById(getPerson3().getId()))
+                .thenReturn(Optional.empty());
+
+        BusinessException excep = Assertions.assertThrows(BusinessException.class, () ->
+                personService.findById(getPerson3().getId()));
+
+        assertThat(excep.getMessage()).isNotEmpty();
+
+    }
+
+    @Test
     void testInsert(){
 
         when(personMapper.convertNewToModel(getPersonDTO1()))

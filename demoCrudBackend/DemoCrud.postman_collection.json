@@ -26,13 +26,58 @@
 			"response": []
 		},
 		{
+			"name": "Person - Find All Search",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/rs/person?search=Andrew",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rs",
+						"person"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "Andrew"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Person - FindById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/rs/person/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rs",
+						"person",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "Person - Insert",
 			"request": {
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\":\"Andrew Phillips\",\r\n    \"phone\":\"+1 818-123-3578\",\r\n    \"birthDay\": \"1994-11-05\",\r\n    \"zipCode\":\"91436\",\r\n    \"address\":\"6542316 Ventura Blvd, Encino\",\r\n    \"email\":\"andrew.phillips@hotmail.com\",\r\n    \"country\":\"US\",\r\n    \"city\":\"Los Angeles\",\r\n    \"state\":\"CA\"\r\n}",
+					"raw": "{\r\n    \"name\":\"Andrew Phillips\",\r\n    \"phone\":\"8181233578\",\r\n    \"birthDay\": \"1994-11-05\",\r\n    \"zipCode\":\"91436\",\r\n    \"address\":\"6542316 Ventura Blvd, Encino\",\r\n    \"email\":\"andrew.phillips@hotmail.com\",\r\n    \"country\":\"US\",\r\n    \"city\":\"Los Angeles\",\r\n    \"state\":\"CA\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -60,7 +105,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"id\" : 1,\r\n    \"name\":\"Andrew\",\r\n    \"phone\":\"+1 818-123-3578\",\r\n    \"birthDay\": \"1994-11-05\",\r\n    \"zipCode\":\"91436\",\r\n    \"address\":\"6542316 Ventura Blvd, Encino\",\r\n    \"email\":\"phillips.andrew@hotmail.com\",\r\n    \"country\":\"US\",\r\n    \"city\":\"Los Angeles\",\r\n    \"state\":\"CA\"\r\n}",
+					"raw": "{\r\n    \"id\" : 1,\r\n    \"name\":\"Andrew\",\r\n    \"phone\":\"8181233578\",\r\n    \"birthDay\": \"1994-11-05\",\r\n    \"zipCode\":\"91436\",\r\n    \"address\":\"6542316 Ventura Blvd, Encino\",\r\n    \"email\":\"phillips.andrew@hotmail.com\",\r\n    \"country\":\"US\",\r\n    \"city\":\"Los Angeles\",\r\n    \"state\":\"CA\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"

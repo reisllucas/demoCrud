@@ -19,7 +19,6 @@ public class PersonController {
     @Autowired
     private PersonService personService;
 
-
     /**
      * HTTP GET request to handle a List of persons
      * @param search search parameter
@@ -30,6 +29,20 @@ public class PersonController {
     List<PersonDTO> findAll(@RequestParam(required = false) String search) {
 
         return personService.findAll(search);
+
+    }
+
+    /**
+     * HTTP GET request to handle a person by his id
+     * @param id parameter
+     * @see br.com.demo.crud.crudbackend.domain.dto.person.PersonDTO
+     * @return a PersonDTO by id
+     */
+    @GetMapping("{id}")
+    PersonDTO findById(@PathVariable("id") Long id) {
+
+        return personService.findById(id);
+
     }
 
     /**
@@ -42,6 +55,7 @@ public class PersonController {
     PersonDTO insert(@RequestBody NewPersonDTO personDTO) {
 
         return personService.insert(personDTO);
+
     }
 
     /**
@@ -57,6 +71,7 @@ public class PersonController {
     PersonDTO update(@PathVariable("id") Long id, @RequestBody PersonDTO personDTO) {
 
         return personService.update(id, personDTO);
+
     }
 
     /**
@@ -67,7 +82,7 @@ public class PersonController {
     void delete(@PathVariable("id") Long id) {
 
         personService.delete(id);
-    }
 
+    }
 
 }

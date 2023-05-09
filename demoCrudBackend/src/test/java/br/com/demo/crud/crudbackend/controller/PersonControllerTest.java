@@ -45,6 +45,17 @@ class PersonControllerTest {
     }
 
     @Test
+    void testFindById() {
+
+        when(personService.findById(getPersonDTO1().getId()))
+                .thenReturn(getPersonDTO1());
+
+        assertThat(personController.findById(getPersonDTO1().getId()).getId())
+                .isEqualTo(getPersonDTO1().getId());
+
+    }
+
+    @Test
     void testInsert(){
 
         when(personService.insert(getPersonDTO1()))

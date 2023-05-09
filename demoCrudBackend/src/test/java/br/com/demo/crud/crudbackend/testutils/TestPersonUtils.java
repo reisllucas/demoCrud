@@ -77,7 +77,7 @@ public class TestPersonUtils {
         person.setId(1L);
         person.setName("Andrew Phillips");
         person.setEmail("andrew.phillips@hotmail.com");
-        person.setPhone("+1 818-123-3578");
+        person.setPhone("818-123-3578");
         person.setZipCode("91436");
         person.setAddress("6542316 Ventura Blvd, Encino");
         person.setCity("Los Angeles");
@@ -96,7 +96,7 @@ public class TestPersonUtils {
         person.setId(2L);
         person.setName("George Willians");
         person.setEmail("george.willians@yahoo.com");
-        person.setPhone("+1 818-777-2578");
+        person.setPhone("818-777-2578");
         person.setZipCode("91436");
         person.setAddress("6542316 Ventura Blvd, Encino");
         person.setCity("Los Angeles");
@@ -115,7 +115,7 @@ public class TestPersonUtils {
         person.setId(3L);
         person.setName("Susan Brawn");
         person.setEmail("susan.brawn@gmail.com");
-        person.setPhone("+1 818-568-1234");
+        person.setPhone("818-568-1234");
         person.setZipCode("91356");
         person.setAddress("2337 1st Ave, Manhattan, East Harlem");
         person.setCity("NYC");
@@ -150,7 +150,7 @@ public class TestPersonUtils {
         person.setId(1L);
         person.setName("Andrew Phillips");
         person.setEmail("andrew.phillips@hotmail.com");
-        person.setPhone("+1 818-123-3578");
+        person.setPhone("818-123-3578");
         person.setZipCode("91436");
         person.setAddress("6542316 Ventura Blvd, Encino");
         person.setCity("Los Angeles");
@@ -169,7 +169,7 @@ public class TestPersonUtils {
         person.setId(2L);
         person.setName("George Willians");
         person.setEmail("george.willians@yahoo.com");
-        person.setPhone("+1 818-777-2578");
+        person.setPhone("818-777-2578");
         person.setZipCode("91436");
         person.setAddress("6542316 Ventura Blvd, Encino");
         person.setCity("Los Angeles");
@@ -188,7 +188,7 @@ public class TestPersonUtils {
         person.setId(3L);
         person.setName("Susan Brawn");
         person.setEmail("susan.brawn@gmail.com");
-        person.setPhone("+1 818-568-1234");
+        person.setPhone("818-568-1234");
         person.setZipCode("91356");
         person.setAddress("2337 1st Ave, Manhattan, East Harlem");
         person.setCity("NYC");

@@ -1,0 +1,21 @@
+<div class="toolbar-menu">
+    <button mat-button class="toolbar-menu-item" routerLink="country" class="bt-toolbar"> 
+        <mat-icon>flag</mat-icon>
+        Country 
+    </button>
+    <button mat-button class="toolbar-menu-item" mat-button [matMenuTriggerFor]="personMenu" class="bt-toolbar"> 
+        <mat-icon>person</mat-icon>
+        Person 
+    </button>
+    <mat-menu #personMenu>
+        <button mat-menu-item routerLink="person">
+            <mat-icon>list</mat-icon>
+            List of People
+        </button>
+        <button mat-menu-item routerLink="person/form">
+            <mat-icon>person_add</mat-icon>
+            New Person
+
+        </button>
+    </mat-menu>
+</div>

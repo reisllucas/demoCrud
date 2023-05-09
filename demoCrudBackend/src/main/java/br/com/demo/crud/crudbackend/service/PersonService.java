@@ -26,9 +26,10 @@ public class PersonService {
     private PersonMapper personMapper;
 
     /**
-     * handle a List of persons
+     * Handle a List of persons
      * @param search search parameter
-     * @see br.com.demo.crud.crudbackend.domain.model.Person
+     * @see br.com.demo.crud.crudbackend.domain.dto.person.PersonDTO
+     * @throws BusinessException if the person does not exist
      * @return a List of PersonDTO
      */
     public List<PersonDTO> findAll(String search) {
@@ -36,10 +37,29 @@ public class PersonService {
         return personRepository.findAll(search)
                 .stream().map(person ->  personMapper.converToDto(person))
                 .toList();
+
     }
 
     /**
-     * handle new inputs of person entity data
+     * Handle a person by his id
+     * @param id parameter
+     * @see br.com.demo.crud.crudbackend.domain.dto.person.PersonDTO
+     * @return a PersonDTO by id
+     */
+    public PersonDTO findById(Long id) {
+
+        Optional<Person> person = personRepository.findById(id);
+
+        if (person.isPresent()) {
+            return personMapper.converToDto(person.get());
+        }
+
+        throw new BusinessException("Person not found");
+
+    }
+
+    /**
+     * Handle new inputs of person entity data
      * @param newPersonDTO input data
      * @see br.com.demo.crud.crudbackend.domain.dto.person.NewPersonDTO
      * @see br.com.demo.crud.crudbackend.domain.model.Person
@@ -54,7 +74,7 @@ public class PersonService {
     }
 
     /**
-     * handle the replacement of resources of person entity data
+     * Handle the replacement of resources of person entity data
      * @param id identifies the data that will be replaced
      * @param personDTO input data
      * @see br.com.demo.crud.crudbackend.domain.model.Person
@@ -70,18 +90,21 @@ public class PersonService {
                     personRepository.save(personMapper.convertToModel(person.get(), personDTO))
             );
         }
+
         throw new BusinessException("Person not found");
 
     }
 
     /**
-     * delete data of person entity data
+     * Delete data of person entity data
      * @param id identifies the data that will be deleted
      */
     public void delete(Long id) {
 
         personRepository.deleteById(id);
+
     }
+
 
 
 }

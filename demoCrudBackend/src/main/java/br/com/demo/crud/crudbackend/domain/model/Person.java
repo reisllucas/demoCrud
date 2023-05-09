@@ -5,6 +5,7 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 import java.time.LocalDate;
+import java.util.Objects;
 
 /**
  * Person entity data
@@ -54,5 +55,8 @@ public class Person {
     return id.equals(person.id);
   }
 
-
+  @Override
+  public int hashCode() {
+    return Objects.hash(id);
+  }
 }

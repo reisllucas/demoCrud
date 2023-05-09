@@ -3,6 +3,8 @@ package br.com.demo.crud.crudbackend.domain.dto.person;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.Objects;
+
 /**
  * Used to handle person entity data
  */
@@ -19,5 +21,8 @@ public class PersonDTO extends NewPersonDTO {
         return id.equals(person.id);
     }
 
-
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
+    }
 }

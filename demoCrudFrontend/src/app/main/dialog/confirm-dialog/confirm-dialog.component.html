@@ -1,0 +1,19 @@
+<mat-toolbar matDialogTitle color="primary">
+    {{title}}
+</mat-toolbar>
+
+<mat-dialog-content>
+    {{message}}
+</mat-dialog-content>
+<mat-divider ></mat-divider>
+<mat-dialog-actions>
+    <span class="auto-spacer"></span>
+    <button mat-button color="primary" (click)="doOk()">
+        <mat-icon>check</mat-icon>
+        Ok
+    </button>
+    <button mat-button mat-dialog-close>
+        <mat-icon>cancel</mat-icon>
+        Cancel
+    </button>
+</mat-dialog-actions>
