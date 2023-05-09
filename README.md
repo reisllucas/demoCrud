@@ -26,9 +26,9 @@ DemoCrud is a demo REST API project that comunicates with H2 database.
     
     
 ---
-### Getting Started
+## Getting Started
 
-## Backend
+### Backend
 
 **Requisits: JDK 17**
 
@@ -38,7 +38,7 @@ DemoCrud is a demo REST API project that comunicates with H2 database.
 
 **URL**: localhost:8080
 
-## Frontend
+### Frontend
 
 **Requisits: Node 20.1**
 
@@ -48,7 +48,7 @@ DemoCrud is a demo REST API project that comunicates with H2 database.
 
 **URL**: localhost:4200
 
-## Run with docker
+### Run with docker
 
 docker pull reisllucas/democrud:latest
 
