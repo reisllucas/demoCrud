@@ -36,6 +36,8 @@ DemoCrud is a demo REST API project that comunicates with H2 database.
 
 **Run**: mvn spring-boot:run
 
+**URL**: localhost:8080
+
 ## Frontend
 
 **Requisits: Node 20.1**
@@ -44,6 +46,7 @@ DemoCrud is a demo REST API project that comunicates with H2 database.
 
 **Run**: npm start
 
+**URL**: localhost:4200
 
 ## Run with docker
 
