@@ -52,7 +52,7 @@ DemoCrud is a demo REST API project that comunicates with H2 database.
 
 
 
-### Run with docker
+### Run all with docker
 
 docker pull reisllucas/democrud:latest
 
