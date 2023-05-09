@@ -1,6 +1,6 @@
 # DemoCrud
 
-DemoCrud is a demo REST API project that comunicates with H2 memory database.
+DemoCrud is a demo REST API project that comunicates with H2 database.
 
 **Project**: https://github.com/reisllucas/demoCrud/tree/main/demoCrudBackend
 
