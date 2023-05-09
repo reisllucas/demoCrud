@@ -1,4 +1,4 @@
-# DemoCrud Java 17 and Angular 15
+# DemoCrud - Java 17 and Angular 15
 
 DemoCrud is a demo REST API project that comunicates with H2 database.
 
